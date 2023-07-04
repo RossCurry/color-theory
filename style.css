@@ -1,0 +1,43 @@
+:root {
+  --color-size: 50px
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+#colorMatrix {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#colorTheory {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  right: 0;
+  gap: 1rem;
+}
+
+.color {
+  width: var(--color-size);
+  height: var(--color-size);
+  border-radius: 50%;
+  margin: .5rem;
+}
+
+.colorStrip {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+.colorDiv{
+  height: 100%;
+}
