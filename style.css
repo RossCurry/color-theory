@@ -1,5 +1,6 @@
 :root {
-  --color-size: 50px
+  --color-size-m: 60px;
+  --color-size-s: 40px;
 }
 
 body{
@@ -26,8 +27,8 @@ body{
 }
 
 .color {
-  width: var(--color-size);
-  height: var(--color-size);
+  width: var(--color-size-m);
+  height: var(--color-size-m);
   border-radius: 50%;
   margin: .5rem;
 }
@@ -40,4 +41,11 @@ body{
 
 .colorDiv{
   height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .color {
+    width: var(--color-size-s);
+    height: var(--color-size-s);
+  }
 }

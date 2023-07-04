@@ -26,6 +26,7 @@ class ColorTheory {
     this.htmlElement = document.createElement("div");
     this.htmlElement.classList.add("color")
     this.htmlElement.addEventListener("mouseover", () => modifyColorStrips(this))
+    this.htmlElement.addEventListener("touchstart", () => modifyColorStrips(this))
     this.color = `hsl(${this.hue}, ${this.saturation}%, ${this.light}%)`
    }
     setPrimary(primary){
