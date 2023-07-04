@@ -44,6 +44,9 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+  #colorTheory {
+    gap: 0;
+  }
   .color {
     width: var(--color-size-s);
     height: var(--color-size-s);
